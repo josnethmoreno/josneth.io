@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Space+Grotesk:wght@300;400;700&display=swap');
+
+:root {
+  --anti-flash-white: hsl(0, 0%, 94%);
+  --black: hsl(0, 0%, 0%);
+  --orioles-orange: hsl(11, 100%, 56%);
+
+  --body-font: 'Open Sans';
+  --head-font: 'Space Grotesk'
+
+  --h1: 2rem;
+  --h2: 1.4rem;
+  --body: .8rem;
+  --small: .6rem;
+
+  --spacer-1: 4rem;
+  --spacer-2: 2rem;
+  --spacer-3: 1rem;
+  --spacer-4: .5rem;
+}
+
+:root.light{
+  --bg: var(--anti-flash-white);
+  --fg: var(--black);
+  --accent: var(--orioles-orange);
+}
+
+:root.dark {
+  --bg: var(--black);
+  --fg: var(--anti-flash-white);
+  --accent: var(--orioles-orange);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--body-font);
+}
+
+h1, h2 {
+  font-family: var(--head-font);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  position: absolute;
+  left: -100%;
+}
