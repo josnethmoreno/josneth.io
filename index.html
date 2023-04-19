@@ -5,29 +5,48 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+  <title>Josneth Moreno ⌁ UI Developer</title>
 </head>
 
 <body>
   <header class="header">
     <nav class="nav">
-      <a href="#" id="logo">
-        <img src="/logo.svg" width="60" alt="">
-      </a>
-      <button id="theme">
-        <img src="/theme.svg" width="24" alt="">
-      </button>
-      <span>SC. VE 22:00PM</span>
-      <button id="menu">
-        <img src="/menu.svg" width="48" alt="">
-      </button>
-      <div class="nav-links">
-        <a href="#hero">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+      <div class="container">
+        <a href="#" class="nav-logo" id="logo">
+          <img src="/logo.svg" width="60" alt="">
+        </a>
+        <button class="nav-theme" id="theme">
+          <img src="/theme.svg" width="24" alt="">
+        </button>
+        <span class="nav-time">
+          <i class="dot-pulse"></i> SC. VE 22:00PM
+        </span>
+        <button class="nav-toggle" id="toggle">
+          <img src="/menu.svg" width="48" alt="">
+        </button>
+        <div class="nav-links">
+          <a href="#hero">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </nav>
   </header>
+  <main>
+    <section class="home" id="home">
+      <div class="container">
+        <h1 class="home-h1">
+          <span class="text-muted">Hi, I'm</span> <span class="text-accent">Josneth Moreno</span> <br> I create friendly,
+          intuitive, functional and accessible interfaces with <span class="h1-good">good</span> digital
+          experience.
+        </h1>
+        <div class="home-data">
+          <p class="home-roles">Designer, <br> Developer<span class="text-accent">_</span></p>
+          <a class="button" href="#work">Go</a>
+        </div>
+      </div>
+    </section>
+  </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
