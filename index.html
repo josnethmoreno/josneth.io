@@ -10,7 +10,7 @@
 
 <body>
   <header class="header">
-    <nav class="nav">
+    <nav class="nav" id="nav" data-show="false">
       <div class="container">
         <a href="#" class="nav-logo" id="logo">
           <img src="/logo.svg" width="60" alt="">
@@ -24,10 +24,26 @@
         <button class="nav-toggle" id="toggle">
           <img src="/menu.svg" width="48" alt="">
         </button>
-        <div class="nav-links">
-          <a href="#hero">About</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
+        <div class="nav-container">
+          <div class="flex">
+            <div class="nav-social">
+              <a href="https://behance.net/josnethmoreno">Behance</a>
+              <a href="https://github.com/josnethmoreno">GitHub</a>
+              <a href="https://twitter.com/josnethmoreno">Twitter</a>
+              <a href="https://codesandbox.io/u/josnethmoreno">CodeSandBox</a>
+            </div>
+            <div class="nav-email">
+              <p>
+                Drop me a hello! <br>
+                <a href="mailto:josnethmoreno@gmail.com">josnethmoreno@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#hero">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -36,7 +52,8 @@
     <section class="home" id="home">
       <div class="container">
         <h1 class="home-h1">
-          <span class="text-muted">Hi, I'm</span> <span class="text-accent">Josneth Moreno</span> <br> I create friendly,
+          <span class="text-muted">Hi, I'm</span> <span class="text-accent">Josneth Moreno</span> <br> I create
+          friendly,
           intuitive, functional and accessible interfaces with <span class="h1-good">good</span> digital
           experience.
         </h1>
@@ -44,6 +61,16 @@
           <p class="home-roles">Designer, <br> Developer<span class="text-accent">_</span></p>
           <a class="button" href="#work">Go</a>
         </div>
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="container">
+        <a class="card">
+          <h2>Branding personal_</h2>
+          <picture>
+            <img src="/work/1.png" alt="">
+          </picture>
+        </a>
       </div>
     </section>
   </main>
