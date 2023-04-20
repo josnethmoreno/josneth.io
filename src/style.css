@@ -79,11 +79,11 @@ h1, h2 {
   font-family: var(--head-font);
 }
 
-h1 {
+h1, .h1 {
   font-size: var(--h1);
 }
 
-h2 {
+h2, .h2 {
   font-size: var(--h2);
 }
 
