@@ -18,6 +18,7 @@
 
   --h1: 1.8rem;
   --h2: 1.4rem;
+  --h3: 1.25rem;
   --body: .8rem;
   --small: .6rem;
 
@@ -108,10 +109,12 @@ h2, .h2 {
 
 .nav-logo {
   width: 2rem;
+  z-index: 10;
 }
 
 .nav-theme {
   width: .8rem;
+  z-index: 10;
 }
 
 .nav-toggle {
@@ -213,4 +216,80 @@ h2, .h2 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact .h1 {
+  max-width: 15ch;
+}
+
+.contact .h1 span {
+  font-weight: var(--bold);
+}
+
+.contact .h2 {
+  text-align: center;
+}
+
+.form {
+  overflow: hidden;
+}
+
+.form-inputs {
+  display: flex;
+  gap: var(--spacer-2);
+  transform: translate(calc(-200% - var(--spacer-2)));
+}
+
+.form-screen {
+  width: calc(100vw - var(--spacer-2));
+}
+
+.form-screen.checkbox {
+  display: block;
+  width: 200%;
+  background-color: red;
+}
+
+.form input[type="text"],
+.form input[type="mail"] {
+  width: calc(100vw - var(--spacer-2));
+  display: block;
+  border-bottom: 1px solid var(--lighter);
+  padding-bottom: var(--spacer-4);
+}
+
+.form input::placeholder{
+  color: var(--lighter-2);
+}
+
+
+.form-inputs[data-input-active="1"] .form-screen:nth-child(1) {
+  visibility: visible;
+}
+
+.form-inputs[data-input-active="2"] .form-screen:nth-child(2) {
+  visibility: visible;
+}
+
+.form-inputs[data-input-active="3"] .form-screen:nth-child(3) {
+  visibility: visible;
+}
+
+.form-inputs[data-input-active="4"] .form-screen:nth-child(4) {
+  visibility: visible;
+}
+
+.form-inputs[data-input-active="5"] .form-screen:nth-child(5) {
+  visibility: visible;
+}
+
+.form button {
+  border: 1px solid var(--lighter);
+  border-radius: 50%;
 }

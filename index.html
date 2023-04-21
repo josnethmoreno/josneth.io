@@ -98,16 +98,40 @@
           <span>digital product?</span>
         </h2>
         <h3 class="h2">Tell me a bit more <i class="text-accent">_</i></h3>
-        <form action="">
+        <form action="" class="form">
           <div>
-            <div class="form-inputs">
-              <input type="text" placeholder="What's your name?">
-              <input type="mail" placeholder="What's your email?">
-              <input type="text" placeholder="What kind of project can i build for you?">
-              <input type="text" placeholder="what’s your budget range for this project?">
-              <input type="text" placeholder="What's your name?">
+            <div class="form-inputs" data-input-active="1">
+              <div class="form-screen">
+                <input type="text" placeholder="What's your name?">
+              </div>
+              <div class="form-screen">
+                <input type="mail" placeholder="What's your email?">
+              </div>
+              <div class="form-screen checkbox">
+                <div></div>
+                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="">
+              </div>
+              <div class="form-screen">
+                <input type="text" placeholder="what’s your budget range for this project?">
+              </div>
+              <div class="form-screen">
+                <input type="text" placeholder="What's your name?">
+              </div>
             </div>
-            <button type="submit"></button>
+            <button type="submit">
+              <p class="button-touch">
+                Next
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.50702 9.00468L6.70203 8.21841L9.84711 5.07332H0V3.95008H9.84711L6.68331 0.786272L7.4883 0L12 4.5117L7.50702 9.00468Z"
+                    fill="#FF481E" />
+                </svg>
+              </p>
+            </button>
           </div>
         </form>
       </div>
