@@ -95,40 +95,38 @@
       <div class="container">
         <h2 class="h1">
           Hey! ready to create your next <br>
-          <span>digital product?</span>
+          <span>digital product<i class="text-accent">?</i> </span>
         </h2>
-        <h3 class="h2">Tell me a bit more <i class="text-accent">_</i></h3>
+        <h3 class="h2">Tell me a bit more<i class="text-accent">_</i></h3>
         <form action="" class="form">
           <div>
-            <div class="form-inputs" data-input-active="1">
-              <div class="form-screen">
+            <div class="form-inputs" data-input-active="0">
+              <div class="form-screen" style="--id: 0">
                 <input type="text" placeholder="What's your name?">
               </div>
-              <div class="form-screen">
+              <div class="form-screen" style="--id: 1">
                 <input type="mail" placeholder="What's your email?">
               </div>
-              <div class="form-screen checkbox">
-                <div></div>
+              <div class="form-screen checkbox" style="--id: 2">
                 <input type="checkbox" name="" id="">
                 <input type="checkbox" name="" id="">
                 <input type="checkbox" name="" id="">
                 <input type="checkbox" name="" id="">
                 <input type="checkbox" name="" id="">
               </div>
-              <div class="form-screen">
+              <div class="form-screen" style="--id: 3">
                 <input type="text" placeholder="what’s your budget range for this project?">
               </div>
-              <div class="form-screen">
+              <div class="form-screen" style="--id: 4">
                 <input type="text" placeholder="What's your name?">
               </div>
             </div>
-            <button type="submit">
+            <button class="button-submit" type="submit" disabled>
               <p class="button-touch">
                 Next
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M7.50702 9.00468L6.70203 8.21841L9.84711 5.07332H0V3.95008H9.84711L6.68331 0.786272L7.4883 0L12 4.5117L7.50702 9.00468Z"
-                    fill="#FF481E" />
+                    d="M7.50702 9.00468L6.70203 8.21841L9.84711 5.07332H0V3.95008H9.84711L6.68331 0.786272L7.4883 0L12 4.5117L7.50702 9.00468Z" />
                 </svg>
               </p>
             </button>
@@ -136,6 +134,20 @@
         </form>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-mail">
+          Drop me a hello! <br>
+          <a href="mailto:josnethmoreno">josnethmoreno@gmail.com</a>
+        </p>
+        <div class="footer-social">
+          <a href="https://behance.net/josnethmoreno">Behance</a>
+          <a href="https://github.com/josnethmoreno">GitHub</a>
+          <a href="https://twitter.com/josnethmoreno">Twitter</a>
+          <a href="https://codesandbox.io/u/josnethmoreno">CodeSandBox</a>
+        </div>
+      </div>
+    </footer>
   </main>
   <script type="module" src="/src/main.ts"></script>
 </body>

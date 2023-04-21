@@ -39,7 +39,10 @@ input {
 	border: none;
 	background-color: transparent;
 	text-align: center;
-	font-size: var(--h3);
+}
+
+input:focus {
+	outline: none;
 }
 
 p,
@@ -68,6 +71,10 @@ button {
   outline: none;
   border: none;
   font-size: 14px;
+}
+
+i {
+	font-style: normal;
 }
 
 #root,
